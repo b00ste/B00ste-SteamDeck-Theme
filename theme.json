@@ -9,10 +9,21 @@
         "Clean Gameview/shared.css": ["SP"],
         "Colored Toggles/shared.css": ["QuickAccess", "SP", "MainMenu"],
         "Round/shared.css": ["SP", "MainMenu", "QuickAccess"],
-        "Switch Like Home/shared.css": ["SP"]
+        "Switch Like Home/shared.css": ["SP"],
+        "collections.css": ["SP"]
     },
     "dependencies": {},
     "patches": {
+        "Collection Games Counter": {
+            "default": "No",
+            "type": "checkbox",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "no-collection-game-counter.css": ["SP"]
+                }
+            }
+        },
         "No Friends": {
             "default": "No",
             "type": "checkbox",
@@ -138,6 +149,19 @@
                     "tabs": ["QuickAccess", "SP", "MainMenu"]
                 }
             ]
+        },
+        "Collection Label": {
+            "default": "UPPERCASE",
+            "type": "dropdown",
+            "values": {
+                "UPPERCASE": {},
+                "lowercase": {
+                    "Collection Label/lowercase.css": ["SP"]
+                },
+                "Unchanged": {
+                    "Collection Label/unchanged.css": ["SP"]
+                }
+            }
         }
     }
 }
