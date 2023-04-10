@@ -1,6 +1,6 @@
 .gamepadhomerecentgames_RecentGamesInnerContainer_282X0 {
-    /* Screen Height - (Header + Footer) - header padding */
-    height: calc(100vh - 80px - 14px);
+    /* Screen Height - (Header + Footer) - header padding - friend bar */
+    height: calc(100vh - 80px - 14px - 58px);
 }
 
 .gamepadhomerecentgames_RecentGamesInnerContainer_282X0 .basicgamecarousel_BasicGameCarousel_3MdH5 {

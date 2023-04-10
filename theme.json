@@ -3,13 +3,13 @@
     "author": "B00ste",
     "target": "System-Wide",
     "version": "v1.0",
-    "description": "B00ste's custom Steam Deck Theme",
+    "description": "B00ste's compilation of Steam Deck Themes",
     "manifest_version": 5,
     "inject": {
-        "home-theme.css": ["SP"],
-        "clean-game-view.css": ["SP"],
-        "round-theme.css": ["SP", "MainMenu", "QuickAccess"],
-        "colored-toggles.css": ["QuickAccess", "SP", "MainMenu"]
+        "Clean Gameview/shared.css": ["SP"],
+        "Colored Toggles/shared.css": ["QuickAccess", "SP", "MainMenu"],
+        "Round/shared.css": ["SP", "MainMenu", "QuickAccess"],
+        "Switch Like Home/shared.css": ["SP"]
     },
     "dependencies": {},
     "patches": {
@@ -19,29 +19,8 @@
             "values": {
                 "No": {},
                 "Yes": {
-                    "friends/no-friends.css": ["SP"]
+                    "Switch Like Home/nofriends.css": ["SP"]
                 }
-            }
-        },
-        "Intensity": {
-            "default": "10px",
-            "type": "slider",
-            "values": {
-                "3px": { "intensity/3px.css": ["SP", "MainMenu", "QuickAccess"] },
-                "5px": { "intensity/5px.css": ["SP", "MainMenu", "QuickAccess"] },
-                "10px": { "intensity/10px.css": ["SP", "MainMenu", "QuickAccess"] },
-                "15px": { "intensity/15px.css": ["SP", "MainMenu", "QuickAccess"] },
-                "20px": { "intensity/20px.css": ["SP", "MainMenu", "QuickAccess"] },
-                "30px": { "intensity/30px.css": ["SP", "MainMenu", "QuickAccess"] }
-            }
-        },
-        "Outlines": {
-            "default": "Round",
-            "type": "dropdown",
-            "values": {
-                "Round": { "outline/round-outline.css": ["SP", "MainMenu", "QuickAccess"] },
-                "Square": {},
-                "Hidden": { "outline/hide-outline.css": ["SP", "MainMenu", "QuickAccess"] }
             }
         },
         "Show Steam Cloud": {
@@ -49,7 +28,7 @@
             "default": "No",
             "values": {
                 "Yes": {
-                    "game-view/steamcloud.css": ["SP"]
+                    "Clean Gameview/steamcloud.css": ["SP"]
                 },
                 "No": {}
             }
@@ -59,9 +38,46 @@
             "default": "No",
             "values": {
                 "Yes": {
-                    "game-view/blur.css": ["SP"]
+                    "Clean Gameview/blur.css": ["SP"]
                 },
                 "No": {}
+            }
+        },
+        "Intensity": {
+            "default": "10px",
+            "type": "slider",
+            "values": {
+                "3px": {
+                    "Round/intensity/3px.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "5px": {
+                    "Round/intensity/5px.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "10px": {
+                    "Round/intensity/10px.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "15px": {
+                    "Round/intensity/15px.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "20px": {
+                    "Round/intensity/20px.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "30px": {
+                    "Round/intensity/30px.css": ["SP", "MainMenu", "QuickAccess"]
+                }
+            }
+        },
+        "Outlines": {
+            "default": "Round",
+            "type": "dropdown",
+            "values": {
+                "Round": {
+                    "Round/round-outline.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "Square": {},
+                "Hidden": {
+                    "Round/hide-outline.css": ["SP", "MainMenu", "QuickAccess"]
+                }
             }
         },
         "Theme Color": {
@@ -69,38 +85,38 @@
             "type": "dropdown",
             "values": {
                 "Red": {
-                    "colors/red.css": ["QuickAccess", "SP", "MainMenu"]
+                    "Colored Toggles/colors/red.css": ["QuickAccess", "SP", "MainMenu"]
                 },
                 "Orange": {},
                 "Yellow": {
-                    "colors/yellow.css": ["QuickAccess", "SP", "MainMenu"]
+                    "Colored Toggles/colors/yellow.css": ["QuickAccess", "SP", "MainMenu"]
                 },
                 "Green": {
-                    "colors/green.css": ["QuickAccess", "SP", "MainMenu"]
+                    "Colored Toggles/colors/green.css": ["QuickAccess", "SP", "MainMenu"]
                 },
                 "Lime": {
-                    "colors/lime.css": ["QuickAccess", "SP", "MainMenu"]
+                    "Colored Toggles/colors/lime.css": ["QuickAccess", "SP", "MainMenu"]
                 },
                 "Blue": {
-                    "colors/blue.css": ["QuickAccess", "SP", "MainMenu"]
+                    "Colored Toggles/colors/blue.css": ["QuickAccess", "SP", "MainMenu"]
                 },
                 "Indigo": {
-                    "colors/indigo.css": ["QuickAccess", "SP", "MainMenu"]
+                    "Colored Toggles/colors/indigo.css": ["QuickAccess", "SP", "MainMenu"]
                 },
                 "Magenta": {
-                    "colors/magenta.css": ["QuickAccess", "SP", "MainMenu"]
+                    "Colored Toggles/colors/magenta.css": ["QuickAccess", "SP", "MainMenu"]
                 },
                 "Gradient RGB": {
-                    "colors/gradient_rgb.css": ["QuickAccess", "SP", "MainMenu"]
+                    "Colored Toggles/colors/gradient_rgb.css": ["QuickAccess", "SP", "MainMenu"]
                 },
                 "Gradient Deck": {
-                    "colors/gradient_deck.css": ["QuickAccess", "SP", "MainMenu"]
+                    "Colored Toggles/colors/gradient_deck.css": ["QuickAccess", "SP", "MainMenu"]
                 },
                 "Gray": {
-                    "colors/gray.css": ["QuickAccess", "SP", "MainMenu"]
+                    "Colored Toggles/colors/gray.css": ["QuickAccess", "SP", "MainMenu"]
                 },
                 "White": {
-                    "colors/white.css": ["QuickAccess", "SP", "MainMenu"]
+                    "Colored Toggles/colors/white.css": ["QuickAccess", "SP", "MainMenu"]
                 },
                 "Custom": {}
             },

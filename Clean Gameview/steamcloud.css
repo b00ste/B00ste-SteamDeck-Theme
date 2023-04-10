@@ -9,16 +9,14 @@
 .appdetailsplaysection_CloudStatusLabel_fUTbl {
     display: none;
 }
-.appdetailsplaysection_CloudStatusIcon_1Prjv > svg {
+ .appdetailsplaysection_CloudStatusIcon_1Prjv > svg {
     margin: 0 4px 4px 4px;
 }
 
-.appdetailsplaysection_CloudStatusRow_QvHky:not(.gpfocus)
-    .appdetailsplaysection_CloudStatusIcon_1Prjv
-    > svg {
+.appdetailsplaysection_CloudStatusRow_QvHky:not(.gpfocus) .appdetailsplaysection_CloudStatusIcon_1Prjv > svg {
     color: white;
 }
 
 .appdetailsplaysection_CloudSyncProblem_2bzio:not(.gpfocus) {
-    background-color: #acb2c924;
+    background-color: #ACB2C924;
 }
