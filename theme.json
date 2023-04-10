@@ -1,0 +1,127 @@
+{
+    "name": "B00ste's Theme",
+    "author": "B00ste",
+    "target": "System-Wide",
+    "version": "v1.0",
+    "description": "B00ste's custom Steam Deck Theme",
+    "manifest_version": 5,
+    "inject": {
+        "home-theme.css": ["SP"],
+        "clean-game-view.css": ["SP"],
+        "round-theme.css": ["SP", "MainMenu", "QuickAccess"],
+        "colored-toggles.css": ["QuickAccess", "SP", "MainMenu"]
+    },
+    "dependencies": {},
+    "patches": {
+        "No Friends": {
+            "default": "No",
+            "type": "checkbox",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "friends/no-friends.css": ["SP"]
+                }
+            }
+        },
+        "Intensity": {
+            "default": "10px",
+            "type": "slider",
+            "values": {
+                "3px": { "intensity/3px.css": ["SP", "MainMenu", "QuickAccess"] },
+                "5px": { "intensity/5px.css": ["SP", "MainMenu", "QuickAccess"] },
+                "10px": { "intensity/10px.css": ["SP", "MainMenu", "QuickAccess"] },
+                "15px": { "intensity/15px.css": ["SP", "MainMenu", "QuickAccess"] },
+                "20px": { "intensity/20px.css": ["SP", "MainMenu", "QuickAccess"] },
+                "30px": { "intensity/30px.css": ["SP", "MainMenu", "QuickAccess"] }
+            }
+        },
+        "Outlines": {
+            "default": "Round",
+            "type": "dropdown",
+            "values": {
+                "Round": { "outline/round-outline.css": ["SP", "MainMenu", "QuickAccess"] },
+                "Square": {},
+                "Hidden": { "outline/hide-outline.css": ["SP", "MainMenu", "QuickAccess"] }
+            }
+        },
+        "Show Steam Cloud": {
+            "type": "checkbox",
+            "default": "No",
+            "values": {
+                "Yes": {
+                    "game-view/steamcloud.css": ["SP"]
+                },
+                "No": {}
+            }
+        },
+        "Use Blur": {
+            "type": "checkbox",
+            "default": "No",
+            "values": {
+                "Yes": {
+                    "game-view/blur.css": ["SP"]
+                },
+                "No": {}
+            }
+        },
+        "Theme Color": {
+            "default": "Orange",
+            "type": "dropdown",
+            "values": {
+                "Red": {
+                    "colors/red.css": ["QuickAccess", "SP", "MainMenu"]
+                },
+                "Orange": {},
+                "Yellow": {
+                    "colors/yellow.css": ["QuickAccess", "SP", "MainMenu"]
+                },
+                "Green": {
+                    "colors/green.css": ["QuickAccess", "SP", "MainMenu"]
+                },
+                "Lime": {
+                    "colors/lime.css": ["QuickAccess", "SP", "MainMenu"]
+                },
+                "Blue": {
+                    "colors/blue.css": ["QuickAccess", "SP", "MainMenu"]
+                },
+                "Indigo": {
+                    "colors/indigo.css": ["QuickAccess", "SP", "MainMenu"]
+                },
+                "Magenta": {
+                    "colors/magenta.css": ["QuickAccess", "SP", "MainMenu"]
+                },
+                "Gradient RGB": {
+                    "colors/gradient_rgb.css": ["QuickAccess", "SP", "MainMenu"]
+                },
+                "Gradient Deck": {
+                    "colors/gradient_deck.css": ["QuickAccess", "SP", "MainMenu"]
+                },
+                "Gray": {
+                    "colors/gray.css": ["QuickAccess", "SP", "MainMenu"]
+                },
+                "White": {
+                    "colors/white.css": ["QuickAccess", "SP", "MainMenu"]
+                },
+                "Custom": {}
+            },
+            "components": [
+                {
+                    "name": "Main Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#f00",
+                    "css_variable": "colored-toggles-main-color",
+                    "tabs": ["QuickAccess", "SP", "MainMenu"]
+                },
+                {
+                    "name": "Text Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#000",
+                    "css_variable": "colored-toggles-friends-text-color",
+                    "tabs": ["QuickAccess", "SP", "MainMenu"]
+                }
+            ]
+        }
+    }
+}
