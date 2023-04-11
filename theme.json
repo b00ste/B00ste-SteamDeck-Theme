@@ -112,7 +112,7 @@
             }
         },
         "Collection Nr. 1": {
-            "default": "Unchanged",
+            "default": "Apps",
             "type": "dropdown",
             "values": {
                 "Unchanged": {},
@@ -125,7 +125,7 @@
             }
         },
         "Collection Nr. 2": {
-            "default": "Unchanged",
+            "default": "SSD",
             "type": "dropdown",
             "values": {
                 "Unchanged": {},
@@ -138,7 +138,7 @@
             }
         },
         "Collection Nr. 3": {
-            "default": "Unchanged",
+            "default": "GBA",
             "type": "dropdown",
             "values": {
                 "Unchanged": {},
@@ -151,7 +151,7 @@
             }
         },
         "Collection Nr. 4": {
-            "default": "Unchanged",
+            "default": "NDS",
             "type": "dropdown",
             "values": {
                 "Unchanged": {},
@@ -164,7 +164,7 @@
             }
         },
         "Collection Nr. 5": {
-            "default": "Unchanged",
+            "default": "PSP",
             "type": "dropdown",
             "values": {
                 "Unchanged": {},
@@ -177,7 +177,7 @@
             }
         },
         "Collection Nr. 6": {
-            "default": "Unchanged",
+            "default": "SD Card",
             "type": "dropdown",
             "values": {
                 "Unchanged": {},
@@ -190,7 +190,7 @@
             }
         },
         "Collection Nr. 7": {
-            "default": "Unchanged",
+            "default": "SD Card",
             "type": "dropdown",
             "values": {
                 "Unchanged": {},
@@ -203,7 +203,7 @@
             }
         },
         "Collection Nr. 8": {
-            "default": "Unchanged",
+            "default": "SD Card",
             "type": "dropdown",
             "values": {
                 "Unchanged": {},
@@ -216,7 +216,7 @@
             }
         },
         "Collection Nr. 9": {
-            "default": "Unchanged",
+            "default": "SD Card",
             "type": "dropdown",
             "values": {
                 "Unchanged": {},
@@ -229,7 +229,7 @@
             }
         },
         "Collection Nr. 10": {
-            "default": "Unchanged",
+            "default": "SD Card",
             "type": "dropdown",
             "values": {
                 "Unchanged": {},
@@ -242,7 +242,7 @@
             }
         },
         "Collection Nr. 11": {
-            "default": "Unchanged",
+            "default": "SD Card",
             "type": "dropdown",
             "values": {
                 "Unchanged": {},
@@ -255,7 +255,7 @@
             }
         },
         "Collection Nr. 12": {
-            "default": "Unchanged",
+            "default": "SD Card",
             "type": "dropdown",
             "values": {
                 "Unchanged": {},

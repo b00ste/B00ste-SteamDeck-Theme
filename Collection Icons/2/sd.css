@@ -1,10 +1,1 @@
-.allcollections_Collection_3IWn-:nth-child(2) .allcollections_CollectionImage_2ERAQ {
-    display: none;
-}
-
-.allcollections_Collection_3IWn-:nth-child(2) {
-    background-image: url("https://cdn-icons-png.flaticon.com/512/814/814109.png");
-    background-size: 160px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+        .allcollections_Collection_3IWn-:nth-child(2)        .allcollections_CollectionImage_2ERAQ {            display: none;         }        .allcollections_Collection_3IWn-:nth-child(2) {            background-image: url('https://cdn-icons-png.flaticon.com/512/4862/4862061.png') !important;            background-size: 160px !important;            background-repeat: no-repeat !important;            background-position: center !important;        }
