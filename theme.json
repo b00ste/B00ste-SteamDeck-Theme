@@ -14,18 +14,18 @@
     },
     "dependencies": {},
     "patches": {
-        "Collection Games Counter": {
+        "Games Counter": {
             "default": "No",
             "type": "checkbox",
             "values": {
-                "No": {},
-                "Yes": {
+                "Yes": {},
+                "No": {
                     "no-collection-game-counter.css": ["SP"]
                 }
             }
         },
         "No Friends": {
-            "default": "No",
+            "default": "Yes",
             "type": "checkbox",
             "values": {
                 "No": {},
@@ -46,7 +46,7 @@
         },
         "Use Blur": {
             "type": "checkbox",
-            "default": "No",
+            "default": "Yes",
             "values": {
                 "Yes": {
                     "Clean Gameview/blur.css": ["SP"]
@@ -92,7 +92,7 @@
             }
         },
         "Theme Color": {
-            "default": "Orange",
+            "default": "Gradient Deck",
             "type": "dropdown",
             "values": {
                 "Red": {
@@ -151,7 +151,7 @@
             ]
         },
         "Collection Label": {
-            "default": "UPPERCASE",
+            "default": "Unchanged",
             "type": "dropdown",
             "values": {
                 "UPPERCASE": {},
@@ -160,6 +160,57 @@
                 },
                 "Unchanged": {
                     "Collection Label/unchanged.css": ["SP"]
+                }
+            }
+        },
+
+        "Collection Nr. 1": {
+            "default": "Unchanged",
+            "type": "dropdown",
+            "values": {
+                "Unchanged": {},
+                "Apps": {
+                    "Collection Icons/1/1-apps.css": ["SP"]
+                },
+                "GBA": {
+                    "Collection Icons/1/1-gba.css": ["SP"]
+                },
+                "NDS": {
+                    "Collection Icons/1/1-nds.css": ["SP"]
+                },
+                "PSP": {
+                    "Collection Icons/1/1-psp.css": ["SP"]
+                },
+                "SD Card": {
+                    "Collection Icons/1/1-sd.css": ["SP"]
+                },
+                "SSD": {
+                    "Collection Icons/1/1-ssd.css": ["SP"]
+                }
+            }
+        },
+        "Collection Nr. 2": {
+            "default": "Unchanged",
+            "type": "dropdown",
+            "values": {
+                "Unchanged": {},
+                "Apps": {
+                    "Collection Icons/2/2-apps.css": ["SP"]
+                },
+                "GBA": {
+                    "Collection Icons/2/2-gba.css": ["SP"]
+                },
+                "NDS": {
+                    "Collection Icons/2/2-nds.css": ["SP"]
+                },
+                "PSP": {
+                    "Collection Icons/2/2-psp.css": ["SP"]
+                },
+                "SD Card": {
+                    "Collection Icons/2/2-sd.css": ["SP"]
+                },
+                "SSD": {
+                    "Collection Icons/2/2-ssd.css": ["SP"]
                 }
             }
         }
