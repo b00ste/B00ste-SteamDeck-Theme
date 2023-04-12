@@ -8,54 +8,87 @@
     "inject": {
         "Clean Gameview/shared.css": ["SP"],
         "Colored Toggles/shared.css": ["QuickAccess", "SP", "MainMenu"],
-        "Round/shared.css": ["SP", "MainMenu", "QuickAccess"],
         "Switch Like Home/shared.css": ["SP"],
-        "collections.css": ["SP"]
+        "Hide Last Played On Home/shared.css": ["SP", "MainMenu", "QuickAccess"],
+        "No Home Filter/shared.css": ["SP"],
+        "Obsidian/shared.css": ["SP", "MainMenu", "QuickAccess"],
+        "shared.css": ["SP"]
     },
     "dependencies": {},
     "patches": {
-        "Games Counter": {
-            "default": "No",
+        "Home Filter Opacity": {
+            "type": "slider",
+            "default": "100",
+            "values": {
+                "0": {
+                    "--filter-opacity": ["0", "SP", "MainMenu", "QuickAccess"]
+                },
+                "10": {
+                    "--filter-opacity": ["0.1", "SP", "MainMenu", "QuickAccess"]
+                },
+                "25": {
+                    "--filter-opacity": ["0.25", "SP", "MainMenu", "QuickAccess"]
+                },
+                "50": {
+                    "--filter-opacity": ["0.5", "SP", "MainMenu", "QuickAccess"]
+                },
+                "75": {
+                    "--filter-opacity": ["0.75", "SP", "MainMenu", "QuickAccess"]
+                },
+                "90": {
+                    "--filter-opacity": ["0.9", "SP", "MainMenu", "QuickAccess"]
+                },
+                "100": {
+                    "--filter-opacity": ["1", "SP", "MainMenu", "QuickAccess"]
+                }
+            },
+            "components": []
+        },
+        "Home game Title Add Margin": {
             "type": "checkbox",
-            "values": { "Yes": {}, "No": { "no-collection-game-counter.css": ["SP"] } }
+            "values": {
+                "No": {},
+                "Yes": {
+                    "margin.css": ["SP", "MainMenu", "QuickAccess"]
+                }
+            }
+        },
+        "Hero Change Animation": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "Yes": {
+                    "--animation-duration": [".5s", "SP", "MainMenu", "QuickAccess"]
+                },
+                "No": {
+                    "--animation-duration": [".0s", "SP", "MainMenu", "QuickAccess"]
+                }
+            },
+            "components": []
         },
         "No Friends": {
             "default": "Yes",
             "type": "checkbox",
             "values": { "No": {}, "Yes": { "Switch Like Home/nofriends.css": ["SP"] } }
         },
-        "Show Steam Cloud": {
-            "type": "checkbox",
+        "Collection Games Counter": {
             "default": "No",
-            "values": { "Yes": { "Clean Gameview/steamcloud.css": ["SP"] }, "No": {} }
-        },
-        "Use Blur": {
             "type": "checkbox",
-            "default": "Yes",
-            "values": { "Yes": { "Clean Gameview/blur.css": ["SP"] }, "No": {} }
-        },
-        "Intensity": {
-            "default": "10px",
-            "type": "slider",
             "values": {
-                "3px": { "Round/intensity/3px.css": ["SP", "MainMenu", "QuickAccess"] },
-                "5px": { "Round/intensity/5px.css": ["SP", "MainMenu", "QuickAccess"] },
-                "10px": { "Round/intensity/10px.css": ["SP", "MainMenu", "QuickAccess"] },
-                "15px": { "Round/intensity/15px.css": ["SP", "MainMenu", "QuickAccess"] },
-                "20px": { "Round/intensity/20px.css": ["SP", "MainMenu", "QuickAccess"] },
-                "30px": { "Round/intensity/30px.css": ["SP", "MainMenu", "QuickAccess"] }
+                "Yes": { "--collection-game-counter-display": ["block", "SP"] },
+                "No": { "--collection-game-counter-display": ["none", "SP"] }
             }
         },
-        "Outlines": {
-            "default": "Round",
+        "Collection Label": {
+            "default": "Unchanged",
             "type": "dropdown",
             "values": {
-                "Round": { "Round/round-outline.css": ["SP", "MainMenu", "QuickAccess"] },
-                "Square": {},
-                "Hidden": { "Round/hide-outline.css": ["SP", "MainMenu", "QuickAccess"] }
+                "UPPERCASE": { "--collection-label-case": ["uppercase", "SP"] },
+                "lowercase": { "--collection-label-case": ["lowercase", "SP"] },
+                "Unchanged": { "--collection-label-case": ["none", "SP"] }
             }
         },
-        "Theme Color": {
+        "Toggles Color": {
             "default": "Gradient Deck",
             "type": "dropdown",
             "values": {
@@ -102,14 +135,50 @@
                 }
             ]
         },
-        "Collection Label": {
-            "default": "Unchanged",
+        "Main Color": {
+            "default": "Black",
             "type": "dropdown",
             "values": {
-                "UPPERCASE": {},
-                "lowercase": { "Collection Label/lowercase.css": ["SP"] },
-                "Unchanged": { "Collection Label/unchanged.css": ["SP"] }
-            }
+                "Black": {},
+                "Dark Gray": {
+                    "dark-gray.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "Gray": {
+                    "gray.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "Red": {
+                    "red.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "Orange": {
+                    "orange.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "Yellow": {
+                    "yellow.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "Green": {
+                    "green.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "Blue": {
+                    "blue.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "Indigo": {
+                    "indigo.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "Violet": {
+                    "violet.css": ["SP", "MainMenu", "QuickAccess"]
+                },
+                "Custom": {}
+            },
+            "components": [
+                {
+                    "name": "Background Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#000",
+                    "css_variable": "--obsidian-main-color",
+                    "tabs": ["SP", "MainMenu", "QuickAccess"]
+                }
+            ]
         }
     }
 }

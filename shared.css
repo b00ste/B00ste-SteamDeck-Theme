@@ -1,0 +1,9 @@
+.allcollections_Collection_3IWn- .allcollections_CollectionLabel_1J1LQ div {
+    text-transform: var(--collection-label-case);
+}
+
+.allcollections_Collection_3IWn-
+    .allcollections_CollectionLabel_1J1LQ
+    .allcollections_CollectionLabelCount_36QQL {
+    display: var(--collection-game-counter-display);
+}
