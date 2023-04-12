@@ -46,10 +46,11 @@
         },
         "Home game Title Add Margin": {
             "type": "checkbox",
+            "default": "Yes",
             "values": {
                 "No": {},
                 "Yes": {
-                    "margin.css": ["SP", "MainMenu", "QuickAccess"]
+                    "Hide Last Played On Home/margin.css": ["SP", "MainMenu", "QuickAccess"]
                 }
             }
         },
@@ -139,33 +140,35 @@
             "default": "Black",
             "type": "dropdown",
             "values": {
-                "Black": {},
+                "Black": {
+                    "--obsidian-main-color": ["#000", "SP", "MainMenu", "QuickAccess"]
+                },
                 "Dark Gray": {
-                    "dark-gray.css": ["SP", "MainMenu", "QuickAccess"]
+                    "--obsidian-main-color": ["#121212", "SP", "MainMenu", "QuickAccess"]
                 },
                 "Gray": {
-                    "gray.css": ["SP", "MainMenu", "QuickAccess"]
+                    "--obsidian-main-color": ["#181818", "SP", "MainMenu", "QuickAccess"]
                 },
                 "Red": {
-                    "red.css": ["SP", "MainMenu", "QuickAccess"]
+                    "--obsidian-main-color": ["#271414", "SP", "MainMenu", "QuickAccess"]
                 },
                 "Orange": {
-                    "orange.css": ["SP", "MainMenu", "QuickAccess"]
+                    "--obsidian-main-color": ["#2b1c0b", "SP", "MainMenu", "QuickAccess"]
                 },
                 "Yellow": {
-                    "yellow.css": ["SP", "MainMenu", "QuickAccess"]
+                    "--obsidian-main-color": ["#222209", "SP", "MainMenu", "QuickAccess"]
                 },
                 "Green": {
-                    "green.css": ["SP", "MainMenu", "QuickAccess"]
+                    "--obsidian-main-color": ["#142714", "SP", "MainMenu", "QuickAccess"]
                 },
                 "Blue": {
-                    "blue.css": ["SP", "MainMenu", "QuickAccess"]
+                    "--obsidian-main-color": ["#141427", "SP", "MainMenu", "QuickAccess"]
                 },
                 "Indigo": {
-                    "indigo.css": ["SP", "MainMenu", "QuickAccess"]
+                    "--obsidian-main-color": ["#1d1427", "SP", "MainMenu", "QuickAccess"]
                 },
                 "Violet": {
-                    "violet.css": ["SP", "MainMenu", "QuickAccess"]
+                    "--obsidian-main-color": ["#231427", "SP", "MainMenu", "QuickAccess"]
                 },
                 "Custom": {}
             },
